@@ -1,0 +1,2034 @@
+[ WARN ] Imported library '/home/rfahham/projetos/testcontainers/libraries/postgres_container.py' contains no keywords.
+Looking for configuration file: 'resources/db.cfg'
+keywords.resource:19
+Configuration file doesn't exist
+keywords.resource:19
+Connect to DB using : psycopg2.connect(database='horadoqa-postgresql', user='horadoqa', password=***, host='host.docker.internal', port=5432)
+keywords.resource:19
+${sql} = CREATE TABLE IF NOT EXISTS usuarios (id SERIAL PRIMARY KEY, nome VARCHAR(255), data_nascimento DATE, sexo VARCHAR(10), estado_civil VARCHAR(20), naturalidade VARCHAR(100), nacionalidade VARCHAR(100))
+keywords.resource:21
+Executing sql:<br><code style="font-weight: bold;">CREATE TABLE IF NOT EXISTS usuarios (id SERIAL PRIMARY KEY, nome VARCHAR(255), data_nascimento DATE, sexo VARCHAR(10), estado_civil VARCHAR(20), naturalidade VARCHAR(100), nacionalidade VARCHAR(100))</code>
+keywords.resource:23
+Commit the transaction
+keywords.resource:23
+Looking for configuration file: 'resources/db.cfg'
+keywords.resource:29
+Configuration file doesn't exist
+keywords.resource:29
+Connect to DB using : psycopg2.connect(database='horadoqa-postgresql', user='horadoqa', password=***, host='host.docker.internal', port=5432)
+keywords.resource:29
+Getting file '<a href="file:///home/rfahham/projetos/testcontainers/robot/usuarios.csv">/home/rfahham/projetos/testcontainers/robot/usuarios.csv</a>'.
+keywords.resource:31
+${content} = nome,data_nascimento,sexo,estado_civil,naturalidade,nacionalidade
+keywords.resource:31
+João Silva,1971-02-02,Masculino,Solteiro,Rio de Janeiro,Brasileira
+keywords.resource:31
+Maria Souza,1972-03-03,Feminino,Casado,São Paulo,Brasileira
+keywords.resource:31
+Ana Oli...
+keywords.resource:31
+101 lines returned
+keywords.resource:32
+${lines} = ['nome,data_nascimento,sexo,estado_civil,naturalidade,nacionalidade', 'João Silva,1971-02-02,Masculino,Solteiro,Rio de Janeiro,Brasileira', 'Maria Souza,1972-03-03,Feminino,Casado,São Paulo,Brasileira...
+keywords.resource:32
+${data_lines} = ['João Silva,1971-02-02,Masculino,Solteiro,Rio de Janeiro,Brasileira', 'Maria Souza,1972-03-03,Feminino,Casado,São Paulo,Brasileira', 'Ana Oliveira,1973-04-04,Feminino,Divorciado,Curitiba,Brasileira',...
+keywords.resource:35
+${data} = ['João Silva', '1971-02-02', 'Masculino', 'Solteiro', 'Rio de Janeiro', 'Brasileira']
+keywords.resource:38
+${nome} = João Silva
+keywords.resource:40
+${data_nascimento} = 1971-02-02
+keywords.resource:41
+${sexo} = Masculino
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Rio de Janeiro
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('João Silva', '1971-02-02', 'Masculino', 'Solteiro', 'Rio de Janeiro', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('João Silva', '1971-02-02', 'Masculino', 'Solteiro', 'Rio de Janeiro', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Maria Souza', '1972-03-03', 'Feminino', 'Casado', 'São Paulo', 'Brasileira']
+keywords.resource:38
+${nome} = Maria Souza
+keywords.resource:40
+${data_nascimento} = 1972-03-03
+keywords.resource:41
+${sexo} = Feminino
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = São Paulo
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Maria Souza', '1972-03-03', 'Feminino', 'Casado', 'São Paulo', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Maria Souza', '1972-03-03', 'Feminino', 'Casado', 'São Paulo', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Ana Oliveira', '1973-04-04', 'Feminino', 'Divorciado', 'Curitiba', 'Brasileira']
+keywords.resource:38
+${nome} = Ana Oliveira
+keywords.resource:40
+${data_nascimento} = 1973-04-04
+keywords.resource:41
+${sexo} = Feminino
+keywords.resource:42
+${estado_civil} = Divorciado
+keywords.resource:43
+${naturalidade} = Curitiba
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Ana Oliveira', '1973-04-04', 'Feminino', 'Divorciado', 'Curitiba', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Ana Oliveira', '1973-04-04', 'Feminino', 'Divorciado', 'Curitiba', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Carlos Santos', '1974-05-05', 'Masculino', 'Viúvo', 'Salvador', 'Brasileira']
+keywords.resource:38
+${nome} = Carlos Santos
+keywords.resource:40
+${data_nascimento} = 1974-05-05
+keywords.resource:41
+${sexo} = Masculino
+keywords.resource:42
+${estado_civil} = Viúvo
+keywords.resource:43
+${naturalidade} = Salvador
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Carlos Santos', '1974-05-05', 'Masculino', 'Viúvo', 'Salvador', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Carlos Santos', '1974-05-05', 'Masculino', 'Viúvo', 'Salvador', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Pedro Lima', '1975-06-06', 'Masculino', 'Solteiro', 'Belo Horizonte', 'Brasileira']
+keywords.resource:38
+${nome} = Pedro Lima
+keywords.resource:40
+${data_nascimento} = 1975-06-06
+keywords.resource:41
+${sexo} = Masculino
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Belo Horizonte
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Pedro Lima', '1975-06-06', 'Masculino', 'Solteiro', 'Belo Horizonte', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Pedro Lima', '1975-06-06', 'Masculino', 'Solteiro', 'Belo Horizonte', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Lucas Pereira', '1976-07-07', 'Masculino', 'Casado', 'Recife', 'Brasileira']
+keywords.resource:38
+${nome} = Lucas Pereira
+keywords.resource:40
+${data_nascimento} = 1976-07-07
+keywords.resource:41
+${sexo} = Masculino
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Recife
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Lucas Pereira', '1976-07-07', 'Masculino', 'Casado', 'Recife', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Lucas Pereira', '1976-07-07', 'Masculino', 'Casado', 'Recife', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Julia Costa', '1977-08-08', 'Feminino', 'Divorciado', 'Porto Alegre', 'Brasileira']
+keywords.resource:38
+${nome} = Julia Costa
+keywords.resource:40
+${data_nascimento} = 1977-08-08
+keywords.resource:41
+${sexo} = Feminino
+keywords.resource:42
+${estado_civil} = Divorciado
+keywords.resource:43
+${naturalidade} = Porto Alegre
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Julia Costa', '1977-08-08', 'Feminino', 'Divorciado', 'Porto Alegre', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Julia Costa', '1977-08-08', 'Feminino', 'Divorciado', 'Porto Alegre', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Mariana Rodrigues', '1978-09-09', 'Feminino', 'Viúvo', 'Brasília', 'Brasileira']
+keywords.resource:38
+${nome} = Mariana Rodrigues
+keywords.resource:40
+${data_nascimento} = 1978-09-09
+keywords.resource:41
+${sexo} = Feminino
+keywords.resource:42
+${estado_civil} = Viúvo
+keywords.resource:43
+${naturalidade} = Brasília
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Mariana Rodrigues', '1978-09-09', 'Feminino', 'Viúvo', 'Brasília', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Mariana Rodrigues', '1978-09-09', 'Feminino', 'Viúvo', 'Brasília', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Rafael Alves', '1979-10-10', 'Masculino', 'Solteiro', 'Manaus', 'Brasileira']
+keywords.resource:38
+${nome} = Rafael Alves
+keywords.resource:40
+${data_nascimento} = 1979-10-10
+keywords.resource:41
+${sexo} = Masculino
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Manaus
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Rafael Alves', '1979-10-10', 'Masculino', 'Solteiro', 'Manaus', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Rafael Alves', '1979-10-10', 'Masculino', 'Solteiro', 'Manaus', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Ana Souza', '1990-03-12', 'F', 'Solteira', 'Rio de Janeiro', 'Brasileira']
+keywords.resource:38
+${nome} = Ana Souza
+keywords.resource:40
+${data_nascimento} = 1990-03-12
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Rio de Janeiro
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Ana Souza', '1990-03-12', 'F', 'Solteira', 'Rio de Janeiro', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Ana Souza', '1990-03-12', 'F', 'Solteira', 'Rio de Janeiro', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Carlos Lima', '1985-07-25', 'M', 'Casado', 'São Paulo', 'Brasileira']
+keywords.resource:38
+${nome} = Carlos Lima
+keywords.resource:40
+${data_nascimento} = 1985-07-25
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = São Paulo
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Carlos Lima', '1985-07-25', 'M', 'Casado', 'São Paulo', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Carlos Lima', '1985-07-25', 'M', 'Casado', 'São Paulo', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Mariana Alves', '1992-11-03', 'F', 'Solteira', 'Belo Horizonte', 'Brasileira']
+keywords.resource:38
+${nome} = Mariana Alves
+keywords.resource:40
+${data_nascimento} = 1992-11-03
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Belo Horizonte
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Mariana Alves', '1992-11-03', 'F', 'Solteira', 'Belo Horizonte', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Mariana Alves', '1992-11-03', 'F', 'Solteira', 'Belo Horizonte', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['João Pereira', '1978-01-19', 'M', 'Divorciado', 'Salvador', 'Brasileira']
+keywords.resource:38
+${nome} = João Pereira
+keywords.resource:40
+${data_nascimento} = 1978-01-19
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Divorciado
+keywords.resource:43
+${naturalidade} = Salvador
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('João Pereira', '1978-01-19', 'M', 'Divorciado', 'Salvador', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('João Pereira', '1978-01-19', 'M', 'Divorciado', 'Salvador', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Fernanda Rocha', '2000-06-30', 'F', 'Solteira', 'Curitiba', 'Brasileira']
+keywords.resource:38
+${nome} = Fernanda Rocha
+keywords.resource:40
+${data_nascimento} = 2000-06-30
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Curitiba
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Fernanda Rocha', '2000-06-30', 'F', 'Solteira', 'Curitiba', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Fernanda Rocha', '2000-06-30', 'F', 'Solteira', 'Curitiba', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Lucas Martins', '1995-09-14', 'M', 'Solteiro', 'Fortaleza', 'Brasileira']
+keywords.resource:38
+${nome} = Lucas Martins
+keywords.resource:40
+${data_nascimento} = 1995-09-14
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Fortaleza
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Lucas Martins', '1995-09-14', 'M', 'Solteiro', 'Fortaleza', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Lucas Martins', '1995-09-14', 'M', 'Solteiro', 'Fortaleza', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Patrícia Gomes', '1988-12-05', 'F', 'Casada', 'Recife', 'Brasileira']
+keywords.resource:38
+${nome} = Patrícia Gomes
+keywords.resource:40
+${data_nascimento} = 1988-12-05
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Casada
+keywords.resource:43
+${naturalidade} = Recife
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Patrícia Gomes', '1988-12-05', 'F', 'Casada', 'Recife', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Patrícia Gomes', '1988-12-05', 'F', 'Casada', 'Recife', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Rafael Ribeiro', '1993-04-22', 'M', 'Solteiro', 'Porto Alegre', 'Brasileira']
+keywords.resource:38
+${nome} = Rafael Ribeiro
+keywords.resource:40
+${data_nascimento} = 1993-04-22
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Porto Alegre
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Rafael Ribeiro', '1993-04-22', 'M', 'Solteiro', 'Porto Alegre', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Rafael Ribeiro', '1993-04-22', 'M', 'Solteiro', 'Porto Alegre', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Juliana Carvalho', '1987-08-11', 'F', 'Divorciada', 'Brasília', 'Brasileira']
+keywords.resource:38
+${nome} = Juliana Carvalho
+keywords.resource:40
+${data_nascimento} = 1987-08-11
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Divorciada
+keywords.resource:43
+${naturalidade} = Brasília
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Juliana Carvalho', '1987-08-11', 'F', 'Divorciada', 'Brasília', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Juliana Carvalho', '1987-08-11', 'F', 'Divorciada', 'Brasília', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Bruno Fernandes', '1999-02-27', 'M', 'Solteiro', 'Manaus', 'Brasileira']
+keywords.resource:38
+${nome} = Bruno Fernandes
+keywords.resource:40
+${data_nascimento} = 1999-02-27
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Manaus
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Bruno Fernandes', '1999-02-27', 'M', 'Solteiro', 'Manaus', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Bruno Fernandes', '1999-02-27', 'M', 'Solteiro', 'Manaus', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Aline Teixeira', '1991-05-18', 'F', 'Casada', 'Goiânia', 'Brasileira']
+keywords.resource:38
+${nome} = Aline Teixeira
+keywords.resource:40
+${data_nascimento} = 1991-05-18
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Casada
+keywords.resource:43
+${naturalidade} = Goiânia
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Aline Teixeira', '1991-05-18', 'F', 'Casada', 'Goiânia', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Aline Teixeira', '1991-05-18', 'F', 'Casada', 'Goiânia', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Eduardo Costa', '1984-10-09', 'M', 'Casado', 'Florianópolis', 'Brasileira']
+keywords.resource:38
+${nome} = Eduardo Costa
+keywords.resource:40
+${data_nascimento} = 1984-10-09
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Florianópolis
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Eduardo Costa', '1984-10-09', 'M', 'Casado', 'Florianópolis', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Eduardo Costa', '1984-10-09', 'M', 'Casado', 'Florianópolis', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Camila Barros', '1996-07-01', 'F', 'Solteira', 'Vitória', 'Brasileira']
+keywords.resource:38
+${nome} = Camila Barros
+keywords.resource:40
+${data_nascimento} = 1996-07-01
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Vitória
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Camila Barros', '1996-07-01', 'F', 'Solteira', 'Vitória', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Camila Barros', '1996-07-01', 'F', 'Solteira', 'Vitória', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Felipe Duarte', '1989-03-21', 'M', 'Solteiro', 'Natal', 'Brasileira']
+keywords.resource:38
+${nome} = Felipe Duarte
+keywords.resource:40
+${data_nascimento} = 1989-03-21
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Natal
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Felipe Duarte', '1989-03-21', 'M', 'Solteiro', 'Natal', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Felipe Duarte', '1989-03-21', 'M', 'Solteiro', 'Natal', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Larissa Mendes', '1998-11-15', 'F', 'Solteira', 'João Pessoa', 'Brasileira']
+keywords.resource:38
+${nome} = Larissa Mendes
+keywords.resource:40
+${data_nascimento} = 1998-11-15
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = João Pessoa
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Larissa Mendes', '1998-11-15', 'F', 'Solteira', 'João Pessoa', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Larissa Mendes', '1998-11-15', 'F', 'Solteira', 'João Pessoa', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Gustavo Nunes', '1977-06-08', 'M', 'Casado', 'Teresina', 'Brasileira']
+keywords.resource:38
+${nome} = Gustavo Nunes
+keywords.resource:40
+${data_nascimento} = 1977-06-08
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Teresina
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Gustavo Nunes', '1977-06-08', 'M', 'Casado', 'Teresina', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Gustavo Nunes', '1977-06-08', 'M', 'Casado', 'Teresina', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Beatriz Freitas', '1994-01-30', 'F', 'Solteira', 'Aracaju', 'Brasileira']
+keywords.resource:38
+${nome} = Beatriz Freitas
+keywords.resource:40
+${data_nascimento} = 1994-01-30
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Aracaju
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Beatriz Freitas', '1994-01-30', 'F', 'Solteira', 'Aracaju', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Beatriz Freitas', '1994-01-30', 'F', 'Solteira', 'Aracaju', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Diego Monteiro', '1986-09-12', 'M', 'Divorciado', 'Cuiabá', 'Brasileira']
+keywords.resource:38
+${nome} = Diego Monteiro
+keywords.resource:40
+${data_nascimento} = 1986-09-12
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Divorciado
+keywords.resource:43
+${naturalidade} = Cuiabá
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Diego Monteiro', '1986-09-12', 'M', 'Divorciado', 'Cuiabá', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Diego Monteiro', '1986-09-12', 'M', 'Divorciado', 'Cuiabá', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Renata Farias', '1997-02-10', 'F', 'Solteira', 'Campo Grande', 'Brasileira']
+keywords.resource:38
+${nome} = Renata Farias
+keywords.resource:40
+${data_nascimento} = 1997-02-10
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Campo Grande
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Renata Farias', '1997-02-10', 'F', 'Solteira', 'Campo Grande', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Renata Farias', '1997-02-10', 'F', 'Solteira', 'Campo Grande', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Thiago Batista', '1990-12-24', 'M', 'Casado', 'Palmas', 'Brasileira']
+keywords.resource:38
+${nome} = Thiago Batista
+keywords.resource:40
+${data_nascimento} = 1990-12-24
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Palmas
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Thiago Batista', '1990-12-24', 'M', 'Casado', 'Palmas', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Thiago Batista', '1990-12-24', 'M', 'Casado', 'Palmas', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Paula Azevedo', '1983-04-17', 'F', 'Casada', 'Rio Branco', 'Brasileira']
+keywords.resource:38
+${nome} = Paula Azevedo
+keywords.resource:40
+${data_nascimento} = 1983-04-17
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Casada
+keywords.resource:43
+${naturalidade} = Rio Branco
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Paula Azevedo', '1983-04-17', 'F', 'Casada', 'Rio Branco', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Paula Azevedo', '1983-04-17', 'F', 'Casada', 'Rio Branco', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['André Cardoso', '1992-08-29', 'M', 'Solteiro', 'Macapá', 'Brasileira']
+keywords.resource:38
+${nome} = André Cardoso
+keywords.resource:40
+${data_nascimento} = 1992-08-29
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Macapá
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('André Cardoso', '1992-08-29', 'M', 'Solteiro', 'Macapá', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('André Cardoso', '1992-08-29', 'M', 'Solteiro', 'Macapá', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Simone Correia', '1985-05-05', 'F', 'Divorciada', 'Boa Vista', 'Brasileira']
+keywords.resource:38
+${nome} = Simone Correia
+keywords.resource:40
+${data_nascimento} = 1985-05-05
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Divorciada
+keywords.resource:43
+${naturalidade} = Boa Vista
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Simone Correia', '1985-05-05', 'F', 'Divorciada', 'Boa Vista', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Simone Correia', '1985-05-05', 'F', 'Divorciada', 'Boa Vista', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Marcelo Pacheco', '1991-07-19', 'M', 'Solteiro', 'Porto Velho', 'Brasileira']
+keywords.resource:38
+${nome} = Marcelo Pacheco
+keywords.resource:40
+${data_nascimento} = 1991-07-19
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Porto Velho
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Marcelo Pacheco', '1991-07-19', 'M', 'Solteiro', 'Porto Velho', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Marcelo Pacheco', '1991-07-19', 'M', 'Solteiro', 'Porto Velho', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Vanessa Tavares', '1993-10-11', 'F', 'Solteira', 'São Luís', 'Brasileira']
+keywords.resource:38
+${nome} = Vanessa Tavares
+keywords.resource:40
+${data_nascimento} = 1993-10-11
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = São Luís
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Vanessa Tavares', '1993-10-11', 'F', 'Solteira', 'São Luís', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Vanessa Tavares', '1993-10-11', 'F', 'Solteira', 'São Luís', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Leonardo Vieira', '1988-02-02', 'M', 'Casado', 'Maceió', 'Brasileira']
+keywords.resource:38
+${nome} = Leonardo Vieira
+keywords.resource:40
+${data_nascimento} = 1988-02-02
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Maceió
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Leonardo Vieira', '1988-02-02', 'M', 'Casado', 'Maceió', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Leonardo Vieira', '1988-02-02', 'M', 'Casado', 'Maceió', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Priscila Moura', '1996-06-14', 'F', 'Solteira', 'Belém', 'Brasileira']
+keywords.resource:38
+${nome} = Priscila Moura
+keywords.resource:40
+${data_nascimento} = 1996-06-14
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Belém
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Priscila Moura', '1996-06-14', 'F', 'Solteira', 'Belém', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Priscila Moura', '1996-06-14', 'F', 'Solteira', 'Belém', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Daniel Neves', '1982-03-27', 'M', 'Casado', 'Campinas', 'Brasileira']
+keywords.resource:38
+${nome} = Daniel Neves
+keywords.resource:40
+${data_nascimento} = 1982-03-27
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Campinas
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Daniel Neves', '1982-03-27', 'M', 'Casado', 'Campinas', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Daniel Neves', '1982-03-27', 'M', 'Casado', 'Campinas', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Carla Rezende', '1999-01-09', 'F', 'Solteira', 'Santos', 'Brasileira']
+keywords.resource:38
+${nome} = Carla Rezende
+keywords.resource:40
+${data_nascimento} = 1999-01-09
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Santos
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Carla Rezende', '1999-01-09', 'F', 'Solteira', 'Santos', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Carla Rezende', '1999-01-09', 'F', 'Solteira', 'Santos', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Rodrigo Peixoto', '1987-11-20', 'M', 'Divorciado', 'Sorocaba', 'Brasileira']
+keywords.resource:38
+${nome} = Rodrigo Peixoto
+keywords.resource:40
+${data_nascimento} = 1987-11-20
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Divorciado
+keywords.resource:43
+${naturalidade} = Sorocaba
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Rodrigo Peixoto', '1987-11-20', 'M', 'Divorciado', 'Sorocaba', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Rodrigo Peixoto', '1987-11-20', 'M', 'Divorciado', 'Sorocaba', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Tatiane Borges', '1995-07-07', 'F', 'Solteira', 'Ribeirão Preto', 'Brasileira']
+keywords.resource:38
+${nome} = Tatiane Borges
+keywords.resource:40
+${data_nascimento} = 1995-07-07
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Ribeirão Preto
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Tatiane Borges', '1995-07-07', 'F', 'Solteira', 'Ribeirão Preto', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Tatiane Borges', '1995-07-07', 'F', 'Solteira', 'Ribeirão Preto', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Igor Macedo', '1994-04-01', 'M', 'Solteiro', 'Londrina', 'Brasileira']
+keywords.resource:38
+${nome} = Igor Macedo
+keywords.resource:40
+${data_nascimento} = 1994-04-01
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Londrina
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Igor Macedo', '1994-04-01', 'M', 'Solteiro', 'Londrina', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Igor Macedo', '1994-04-01', 'M', 'Solteiro', 'Londrina', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Elaine Cunha', '1986-09-23', 'F', 'Casada', 'Maringá', 'Brasileira']
+keywords.resource:38
+${nome} = Elaine Cunha
+keywords.resource:40
+${data_nascimento} = 1986-09-23
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Casada
+keywords.resource:43
+${naturalidade} = Maringá
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Elaine Cunha', '1986-09-23', 'F', 'Casada', 'Maringá', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Elaine Cunha', '1986-09-23', 'F', 'Casada', 'Maringá', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Victor Sales', '1992-12-18', 'M', 'Solteiro', 'Joinville', 'Brasileira']
+keywords.resource:38
+${nome} = Victor Sales
+keywords.resource:40
+${data_nascimento} = 1992-12-18
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Joinville
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Victor Sales', '1992-12-18', 'M', 'Solteiro', 'Joinville', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Victor Sales', '1992-12-18', 'M', 'Solteiro', 'Joinville', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Débora Rangel', '1998-05-26', 'F', 'Solteira', 'Blumenau', 'Brasileira']
+keywords.resource:38
+${nome} = Débora Rangel
+keywords.resource:40
+${data_nascimento} = 1998-05-26
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Blumenau
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Débora Rangel', '1998-05-26', 'F', 'Solteira', 'Blumenau', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Débora Rangel', '1998-05-26', 'F', 'Solteira', 'Blumenau', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Henrique Sampaio', '1981-06-06', 'M', 'Casado', 'Caxias do Sul', 'Brasileira']
+keywords.resource:38
+${nome} = Henrique Sampaio
+keywords.resource:40
+${data_nascimento} = 1981-06-06
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Caxias do Sul
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Henrique Sampaio', '1981-06-06', 'M', 'Casado', 'Caxias do Sul', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Henrique Sampaio', '1981-06-06', 'M', 'Casado', 'Caxias do Sul', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Mônica Paiva', '1990-10-02', 'F', 'Divorciada', 'Pelotas', 'Brasileira']
+keywords.resource:38
+${nome} = Mônica Paiva
+keywords.resource:40
+${data_nascimento} = 1990-10-02
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Divorciada
+keywords.resource:43
+${naturalidade} = Pelotas
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Mônica Paiva', '1990-10-02', 'F', 'Divorciada', 'Pelotas', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Mônica Paiva', '1990-10-02', 'F', 'Divorciada', 'Pelotas', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Caio Furtado', '1997-03-15', 'M', 'Solteiro', 'Uberlândia', 'Brasileira']
+keywords.resource:38
+${nome} = Caio Furtado
+keywords.resource:40
+${data_nascimento} = 1997-03-15
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Uberlândia
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Caio Furtado', '1997-03-15', 'M', 'Solteiro', 'Uberlândia', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Caio Furtado', '1997-03-15', 'M', 'Solteiro', 'Uberlândia', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Cláudia Dantas', '1989-08-28', 'F', 'Casada', 'Juiz de Fora', 'Brasileira']
+keywords.resource:38
+${nome} = Cláudia Dantas
+keywords.resource:40
+${data_nascimento} = 1989-08-28
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Casada
+keywords.resource:43
+${naturalidade} = Juiz de Fora
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Cláudia Dantas', '1989-08-28', 'F', 'Casada', 'Juiz de Fora', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Cláudia Dantas', '1989-08-28', 'F', 'Casada', 'Juiz de Fora', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Sérgio Coelho', '1983-02-13', 'M', 'Casado', 'Montes Claros', 'Brasileira']
+keywords.resource:38
+${nome} = Sérgio Coelho
+keywords.resource:40
+${data_nascimento} = 1983-02-13
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Montes Claros
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Sérgio Coelho', '1983-02-13', 'M', 'Casado', 'Montes Claros', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Sérgio Coelho', '1983-02-13', 'M', 'Casado', 'Montes Claros', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Cristina Magalhães', '1991-11-29', 'F', 'Solteira', 'Petrolina', 'Brasileira']
+keywords.resource:38
+${nome} = Cristina Magalhães
+keywords.resource:40
+${data_nascimento} = 1991-11-29
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Petrolina
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Cristina Magalhães', '1991-11-29', 'F', 'Solteira', 'Petrolina', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Cristina Magalhães', '1991-11-29', 'F', 'Solteira', 'Petrolina', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Paulo Nogueira', '1979-07-04', 'M', 'Divorciado', 'Caruaru', 'Brasileira']
+keywords.resource:38
+${nome} = Paulo Nogueira
+keywords.resource:40
+${data_nascimento} = 1979-07-04
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Divorciado
+keywords.resource:43
+${naturalidade} = Caruaru
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Paulo Nogueira', '1979-07-04', 'M', 'Divorciado', 'Caruaru', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Paulo Nogueira', '1979-07-04', 'M', 'Divorciado', 'Caruaru', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Sandra Queiroz', '1988-01-21', 'F', 'Casada', 'Olinda', 'Brasileira']
+keywords.resource:38
+${nome} = Sandra Queiroz
+keywords.resource:40
+${data_nascimento} = 1988-01-21
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Casada
+keywords.resource:43
+${naturalidade} = Olinda
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Sandra Queiroz', '1988-01-21', 'F', 'Casada', 'Olinda', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Sandra Queiroz', '1988-01-21', 'F', 'Casada', 'Olinda', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Fábio Guedes', '1996-09-30', 'M', 'Solteiro', 'Ilhéus', 'Brasileira']
+keywords.resource:38
+${nome} = Fábio Guedes
+keywords.resource:40
+${data_nascimento} = 1996-09-30
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Ilhéus
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Fábio Guedes', '1996-09-30', 'M', 'Solteiro', 'Ilhéus', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Fábio Guedes', '1996-09-30', 'M', 'Solteiro', 'Ilhéus', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Rosana Pires', '1993-06-12', 'F', 'Solteira', 'Itabuna', 'Brasileira']
+keywords.resource:38
+${nome} = Rosana Pires
+keywords.resource:40
+${data_nascimento} = 1993-06-12
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Itabuna
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Rosana Pires', '1993-06-12', 'F', 'Solteira', 'Itabuna', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Rosana Pires', '1993-06-12', 'F', 'Solteira', 'Itabuna', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Márcio Lacerda', '1985-03-08', 'M', 'Casado', 'Feira de Santana', 'Brasileira']
+keywords.resource:38
+${nome} = Márcio Lacerda
+keywords.resource:40
+${data_nascimento} = 1985-03-08
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Feira de Santana
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Márcio Lacerda', '1985-03-08', 'M', 'Casado', 'Feira de Santana', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Márcio Lacerda', '1985-03-08', 'M', 'Casado', 'Feira de Santana', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Luciana Braga', '1994-12-03', 'F', 'Solteira', 'Vitória da Conquista', 'Brasileira']
+keywords.resource:38
+${nome} = Luciana Braga
+keywords.resource:40
+${data_nascimento} = 1994-12-03
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Vitória da Conquista
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Luciana Braga', '1994-12-03', 'F', 'Solteira', 'Vitória da Conquista', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Luciana Braga', '1994-12-03', 'F', 'Solteira', 'Vitória da Conquista', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Alberto Chaves', '1980-05-25', 'M', 'Casado', 'Juazeiro do Norte', 'Brasileira']
+keywords.resource:38
+${nome} = Alberto Chaves
+keywords.resource:40
+${data_nascimento} = 1980-05-25
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Juazeiro do Norte
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Alberto Chaves', '1980-05-25', 'M', 'Casado', 'Juazeiro do Norte', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Alberto Chaves', '1980-05-25', 'M', 'Casado', 'Juazeiro do Norte', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Daniela Porto', '1992-08-16', 'F', 'Solteira', 'Mossoró', 'Brasileira']
+keywords.resource:38
+${nome} = Daniela Porto
+keywords.resource:40
+${data_nascimento} = 1992-08-16
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Mossoró
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Daniela Porto', '1992-08-16', 'F', 'Solteira', 'Mossoró', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Daniela Porto', '1992-08-16', 'F', 'Solteira', 'Mossoró', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Fernando Reis', '1987-10-10', 'M', 'Divorciado', 'Parnamirim', 'Brasileira']
+keywords.resource:38
+${nome} = Fernando Reis
+keywords.resource:40
+${data_nascimento} = 1987-10-10
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Divorciado
+keywords.resource:43
+${naturalidade} = Parnamirim
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Fernando Reis', '1987-10-10', 'M', 'Divorciado', 'Parnamirim', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Fernando Reis', '1987-10-10', 'M', 'Divorciado', 'Parnamirim', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Helena Ramos', '1999-02-22', 'F', 'Solteira', 'Ananindeua', 'Brasileira']
+keywords.resource:38
+${nome} = Helena Ramos
+keywords.resource:40
+${data_nascimento} = 1999-02-22
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Ananindeua
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Helena Ramos', '1999-02-22', 'F', 'Solteira', 'Ananindeua', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Helena Ramos', '1999-02-22', 'F', 'Solteira', 'Ananindeua', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Otávio Silveira', '1995-04-05', 'M', 'Solteiro', 'Marabá', 'Brasileira']
+keywords.resource:38
+${nome} = Otávio Silveira
+keywords.resource:40
+${data_nascimento} = 1995-04-05
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Marabá
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Otávio Silveira', '1995-04-05', 'M', 'Solteiro', 'Marabá', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Otávio Silveira', '1995-04-05', 'M', 'Solteiro', 'Marabá', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Adriana Matos', '1986-11-17', 'F', 'Casada', 'Santarém', 'Brasileira']
+keywords.resource:38
+${nome} = Adriana Matos
+keywords.resource:40
+${data_nascimento} = 1986-11-17
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Casada
+keywords.resource:43
+${naturalidade} = Santarém
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Adriana Matos', '1986-11-17', 'F', 'Casada', 'Santarém', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Adriana Matos', '1986-11-17', 'F', 'Casada', 'Santarém', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Bruna Vilela', '1993-07-27', 'F', 'Solteira', 'Barra Mansa', 'Brasileira']
+keywords.resource:38
+${nome} = Bruna Vilela
+keywords.resource:40
+${data_nascimento} = 1993-07-27
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Barra Mansa
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Bruna Vilela', '1993-07-27', 'F', 'Solteira', 'Barra Mansa', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Bruna Vilela', '1993-07-27', 'F', 'Solteira', 'Barra Mansa', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Ricardo Lopes', '1982-09-09', 'M', 'Casado', 'Volta Redonda', 'Brasileira']
+keywords.resource:38
+${nome} = Ricardo Lopes
+keywords.resource:40
+${data_nascimento} = 1982-09-09
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Volta Redonda
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Ricardo Lopes', '1982-09-09', 'M', 'Casado', 'Volta Redonda', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Ricardo Lopes', '1982-09-09', 'M', 'Casado', 'Volta Redonda', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Julio Cesar Rocha', '1978-01-11', 'M', 'Divorciado', 'Angra dos Reis', 'Brasileira']
+keywords.resource:38
+${nome} = Julio Cesar Rocha
+keywords.resource:40
+${data_nascimento} = 1978-01-11
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Divorciado
+keywords.resource:43
+${naturalidade} = Angra dos Reis
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Julio Cesar Rocha', '1978-01-11', 'M', 'Divorciado', 'Angra dos Reis', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Julio Cesar Rocha', '1978-01-11', 'M', 'Divorciado', 'Angra dos Reis', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Kelly Santana', '1997-06-03', 'F', 'Solteira', 'Resende', 'Brasileira']
+keywords.resource:38
+${nome} = Kelly Santana
+keywords.resource:40
+${data_nascimento} = 1997-06-03
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Resende
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Kelly Santana', '1997-06-03', 'F', 'Solteira', 'Resende', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Kelly Santana', '1997-06-03', 'F', 'Solteira', 'Resende', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Maurício Pinto', '1984-12-29', 'M', 'Casado', 'Itaperuna', 'Brasileira']
+keywords.resource:38
+${nome} = Maurício Pinto
+keywords.resource:40
+${data_nascimento} = 1984-12-29
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Itaperuna
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Maurício Pinto', '1984-12-29', 'M', 'Casado', 'Itaperuna', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Maurício Pinto', '1984-12-29', 'M', 'Casado', 'Itaperuna', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Viviane Duarte', '1991-03-14', 'F', 'Solteira', 'Campos dos Goytacazes', 'Brasileira']
+keywords.resource:38
+${nome} = Viviane Duarte
+keywords.resource:40
+${data_nascimento} = 1991-03-14
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Campos dos Goytacazes
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Viviane Duarte', '1991-03-14', 'F', 'Solteira', 'Campos dos Goytacazes', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Viviane Duarte', '1991-03-14', 'F', 'Solteira', 'Campos dos Goytacazes', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Alexandre Mota', '1989-08-01', 'M', 'Solteiro', 'Cabo Frio', 'Brasileira']
+keywords.resource:38
+${nome} = Alexandre Mota
+keywords.resource:40
+${data_nascimento} = 1989-08-01
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Cabo Frio
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Alexandre Mota', '1989-08-01', 'M', 'Solteiro', 'Cabo Frio', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Alexandre Mota', '1989-08-01', 'M', 'Solteiro', 'Cabo Frio', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Jéssica Leite', '1996-05-20', 'F', 'Solteira', 'Búzios', 'Brasileira']
+keywords.resource:38
+${nome} = Jéssica Leite
+keywords.resource:40
+${data_nascimento} = 1996-05-20
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Búzios
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Jéssica Leite', '1996-05-20', 'F', 'Solteira', 'Búzios', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Jéssica Leite', '1996-05-20', 'F', 'Solteira', 'Búzios', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Roberto Figueiredo', '1983-02-18', 'M', 'Casado', 'Araruama', 'Brasileira']
+keywords.resource:38
+${nome} = Roberto Figueiredo
+keywords.resource:40
+${data_nascimento} = 1983-02-18
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Araruama
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Roberto Figueiredo', '1983-02-18', 'M', 'Casado', 'Araruama', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Roberto Figueiredo', '1983-02-18', 'M', 'Casado', 'Araruama', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Tatiana Freire', '1992-10-07', 'F', 'Divorciada', 'Saquarema', 'Brasileira']
+keywords.resource:38
+${nome} = Tatiana Freire
+keywords.resource:40
+${data_nascimento} = 1992-10-07
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Divorciada
+keywords.resource:43
+${naturalidade} = Saquarema
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Tatiana Freire', '1992-10-07', 'F', 'Divorciada', 'Saquarema', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Tatiana Freire', '1992-10-07', 'F', 'Divorciada', 'Saquarema', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Bruno Pimenta', '1998-04-12', 'M', 'Solteiro', 'Magé', 'Brasileira']
+keywords.resource:38
+${nome} = Bruno Pimenta
+keywords.resource:40
+${data_nascimento} = 1998-04-12
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Magé
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Bruno Pimenta', '1998-04-12', 'M', 'Solteiro', 'Magé', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Bruno Pimenta', '1998-04-12', 'M', 'Solteiro', 'Magé', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Ariane Guimarães', '1995-09-25', 'F', 'Solteira', 'Niterói', 'Brasileira']
+keywords.resource:38
+${nome} = Ariane Guimarães
+keywords.resource:40
+${data_nascimento} = 1995-09-25
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Niterói
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Ariane Guimarães', '1995-09-25', 'F', 'Solteira', 'Niterói', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Ariane Guimarães', '1995-09-25', 'F', 'Solteira', 'Niterói', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Leandro Bastos', '1987-07-31', 'M', 'Casado', 'São Gonçalo', 'Brasileira']
+keywords.resource:38
+${nome} = Leandro Bastos
+keywords.resource:40
+${data_nascimento} = 1987-07-31
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = São Gonçalo
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Leandro Bastos', '1987-07-31', 'M', 'Casado', 'São Gonçalo', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Leandro Bastos', '1987-07-31', 'M', 'Casado', 'São Gonçalo', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Natália Moreira', '1994-01-06', 'F', 'Solteira', 'Duas Barras', 'Brasileira']
+keywords.resource:38
+${nome} = Natália Moreira
+keywords.resource:40
+${data_nascimento} = 1994-01-06
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Duas Barras
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Natália Moreira', '1994-01-06', 'F', 'Solteira', 'Duas Barras', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Natália Moreira', '1994-01-06', 'F', 'Solteira', 'Duas Barras', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['César Brandão', '1981-03-23', 'M', 'Casado', 'Três Rios', 'Brasileira']
+keywords.resource:38
+${nome} = César Brandão
+keywords.resource:40
+${data_nascimento} = 1981-03-23
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Três Rios
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('César Brandão', '1981-03-23', 'M', 'Casado', 'Três Rios', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('César Brandão', '1981-03-23', 'M', 'Casado', 'Três Rios', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Fabiana Torres', '1990-06-11', 'F', 'Solteira', 'Valença', 'Brasileira']
+keywords.resource:38
+${nome} = Fabiana Torres
+keywords.resource:40
+${data_nascimento} = 1990-06-11
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Valença
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Fabiana Torres', '1990-06-11', 'F', 'Solteira', 'Valença', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Fabiana Torres', '1990-06-11', 'F', 'Solteira', 'Valença', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Douglas Freire', '1993-11-08', 'M', 'Solteiro', 'Barra do Piraí', 'Brasileira']
+keywords.resource:38
+${nome} = Douglas Freire
+keywords.resource:40
+${data_nascimento} = 1993-11-08
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Barra do Piraí
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Douglas Freire', '1993-11-08', 'M', 'Solteiro', 'Barra do Piraí', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Douglas Freire', '1993-11-08', 'M', 'Solteiro', 'Barra do Piraí', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Lorena Pacheco', '1997-08-19', 'F', 'Solteira', 'Vassouras', 'Brasileira']
+keywords.resource:38
+${nome} = Lorena Pacheco
+keywords.resource:40
+${data_nascimento} = 1997-08-19
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Vassouras
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Lorena Pacheco', '1997-08-19', 'F', 'Solteira', 'Vassouras', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Lorena Pacheco', '1997-08-19', 'F', 'Solteira', 'Vassouras', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Renan Antunes', '1988-05-02', 'M', 'Casado', 'Miguel Pereira', 'Brasileira']
+keywords.resource:38
+${nome} = Renan Antunes
+keywords.resource:40
+${data_nascimento} = 1988-05-02
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Miguel Pereira
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Renan Antunes', '1988-05-02', 'M', 'Casado', 'Miguel Pereira', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Renan Antunes', '1988-05-02', 'M', 'Casado', 'Miguel Pereira', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Bianca Teles', '1999-02-14', 'F', 'Solteira', 'Paraíba do Sul', 'Brasileira']
+keywords.resource:38
+${nome} = Bianca Teles
+keywords.resource:40
+${data_nascimento} = 1999-02-14
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Paraíba do Sul
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Bianca Teles', '1999-02-14', 'F', 'Solteira', 'Paraíba do Sul', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Bianca Teles', '1999-02-14', 'F', 'Solteira', 'Paraíba do Sul', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Ivan Corrêa', '1986-12-21', 'M', 'Divorciado', 'Paraty', 'Brasileira']
+keywords.resource:38
+${nome} = Ivan Corrêa
+keywords.resource:40
+${data_nascimento} = 1986-12-21
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Divorciado
+keywords.resource:43
+${naturalidade} = Paraty
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Ivan Corrêa', '1986-12-21', 'M', 'Divorciado', 'Paraty', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Ivan Corrêa', '1986-12-21', 'M', 'Divorciado', 'Paraty', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Silvia Amaral', '1991-09-03', 'F', 'Casada', 'Itaguaí', 'Brasileira']
+keywords.resource:38
+${nome} = Silvia Amaral
+keywords.resource:40
+${data_nascimento} = 1991-09-03
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Casada
+keywords.resource:43
+${naturalidade} = Itaguaí
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Silvia Amaral', '1991-09-03', 'F', 'Casada', 'Itaguaí', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Silvia Amaral', '1991-09-03', 'F', 'Casada', 'Itaguaí', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Rogério Lemos', '1984-04-28', 'M', 'Casado', 'Seropédica', 'Brasileira']
+keywords.resource:38
+${nome} = Rogério Lemos
+keywords.resource:40
+${data_nascimento} = 1984-04-28
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Seropédica
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Rogério Lemos', '1984-04-28', 'M', 'Casado', 'Seropédica', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Rogério Lemos', '1984-04-28', 'M', 'Casado', 'Seropédica', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Denise Falcão', '1995-07-16', 'F', 'Solteira', 'Japeri', 'Brasileira']
+keywords.resource:38
+${nome} = Denise Falcão
+keywords.resource:40
+${data_nascimento} = 1995-07-16
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Japeri
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Denise Falcão', '1995-07-16', 'F', 'Solteira', 'Japeri', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Denise Falcão', '1995-07-16', 'F', 'Solteira', 'Japeri', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Hugo Barreto', '1989-01-30', 'M', 'Solteiro', 'Queimados', 'Brasileira']
+keywords.resource:38
+${nome} = Hugo Barreto
+keywords.resource:40
+${data_nascimento} = 1989-01-30
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Queimados
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Hugo Barreto', '1989-01-30', 'M', 'Solteiro', 'Queimados', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Hugo Barreto', '1989-01-30', 'M', 'Solteiro', 'Queimados', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Elaine Pimentel', '1996-03-07', 'F', 'Solteira', 'Belford Roxo', 'Brasileira']
+keywords.resource:38
+${nome} = Elaine Pimentel
+keywords.resource:40
+${data_nascimento} = 1996-03-07
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Belford Roxo
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Elaine Pimentel', '1996-03-07', 'F', 'Solteira', 'Belford Roxo', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Elaine Pimentel', '1996-03-07', 'F', 'Solteira', 'Belford Roxo', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Vitor Araújo', '1992-10-22', 'M', 'Solteiro', 'Nilópolis', 'Brasileira']
+keywords.resource:38
+${nome} = Vitor Araújo
+keywords.resource:40
+${data_nascimento} = 1992-10-22
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Nilópolis
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Vitor Araújo', '1992-10-22', 'M', 'Solteiro', 'Nilópolis', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Vitor Araújo', '1992-10-22', 'M', 'Solteiro', 'Nilópolis', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Flávia Cabral', '1987-06-09', 'F', 'Casada', 'Mesquita', 'Brasileira']
+keywords.resource:38
+${nome} = Flávia Cabral
+keywords.resource:40
+${data_nascimento} = 1987-06-09
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Casada
+keywords.resource:43
+${naturalidade} = Mesquita
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Flávia Cabral', '1987-06-09', 'F', 'Casada', 'Mesquita', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Flávia Cabral', '1987-06-09', 'F', 'Casada', 'Mesquita', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Claudio Teixeira', '1983-08-26', 'M', 'Casado', 'Duque de Caxias', 'Brasileira']
+keywords.resource:38
+${nome} = Claudio Teixeira
+keywords.resource:40
+${data_nascimento} = 1983-08-26
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Duque de Caxias
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Claudio Teixeira', '1983-08-26', 'M', 'Casado', 'Duque de Caxias', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Claudio Teixeira', '1983-08-26', 'M', 'Casado', 'Duque de Caxias', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Cristiane Soares', '1990-11-13', 'F', 'Divorciada', 'Itaboraí', 'Brasileira']
+keywords.resource:38
+${nome} = Cristiane Soares
+keywords.resource:40
+${data_nascimento} = 1990-11-13
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Divorciada
+keywords.resource:43
+${naturalidade} = Itaboraí
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Cristiane Soares', '1990-11-13', 'F', 'Divorciada', 'Itaboraí', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Cristiane Soares', '1990-11-13', 'F', 'Divorciada', 'Itaboraí', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Elias Nascimento', '1979-05-17', 'M', 'Casado', 'Tanguá', 'Brasileira']
+keywords.resource:38
+${nome} = Elias Nascimento
+keywords.resource:40
+${data_nascimento} = 1979-05-17
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Tanguá
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Elias Nascimento', '1979-05-17', 'M', 'Casado', 'Tanguá', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Elias Nascimento', '1979-05-17', 'M', 'Casado', 'Tanguá', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Rita de Cássia', '1988-12-02', 'F', 'Casada', 'Rio Bonito', 'Brasileira']
+keywords.resource:38
+${nome} = Rita de Cássia
+keywords.resource:40
+${data_nascimento} = 1988-12-02
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Casada
+keywords.resource:43
+${naturalidade} = Rio Bonito
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Rita de Cássia', '1988-12-02', 'F', 'Casada', 'Rio Bonito', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Rita de Cássia', '1988-12-02', 'F', 'Casada', 'Rio Bonito', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Pedro Henrique Lopes', '1994-04-15', 'M', 'Solteiro', 'Silva Jardim', 'Brasileira']
+keywords.resource:38
+${nome} = Pedro Henrique Lopes
+keywords.resource:40
+${data_nascimento} = 1994-04-15
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Solteiro
+keywords.resource:43
+${naturalidade} = Silva Jardim
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Pedro Henrique Lopes', '1994-04-15', 'M', 'Solteiro', 'Silva Jardim', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Pedro Henrique Lopes', '1994-04-15', 'M', 'Solteiro', 'Silva Jardim', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Gisele Batista', '1997-07-21', 'F', 'Solteira', 'Casimiro de Abreu', 'Brasileira']
+keywords.resource:38
+${nome} = Gisele Batista
+keywords.resource:40
+${data_nascimento} = 1997-07-21
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Casimiro de Abreu
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Gisele Batista', '1997-07-21', 'F', 'Solteira', 'Casimiro de Abreu', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Gisele Batista', '1997-07-21', 'F', 'Solteira', 'Casimiro de Abreu', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Jonas Ribeiro', '1985-09-05', 'M', 'Casado', 'Quissamã', 'Brasileira']
+keywords.resource:38
+${nome} = Jonas Ribeiro
+keywords.resource:40
+${data_nascimento} = 1985-09-05
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Quissamã
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Jonas Ribeiro', '1985-09-05', 'M', 'Casado', 'Quissamã', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Jonas Ribeiro', '1985-09-05', 'M', 'Casado', 'Quissamã', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Carolina Andrade', '1993-02-28', 'F', 'Solteira', 'Carapebus', 'Brasileira']
+keywords.resource:38
+${nome} = Carolina Andrade
+keywords.resource:40
+${data_nascimento} = 1993-02-28
+keywords.resource:41
+${sexo} = F
+keywords.resource:42
+${estado_civil} = Solteira
+keywords.resource:43
+${naturalidade} = Carapebus
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Carolina Andrade', '1993-02-28', 'F', 'Solteira', 'Carapebus', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Carolina Andrade', '1993-02-28', 'F', 'Solteira', 'Carapebus', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Elias Nascimento', '1979-05-17', 'M', 'Casado', 'Tanguá', 'Brasileira']
+keywords.resource:38
+${nome} = Elias Nascimento
+keywords.resource:40
+${data_nascimento} = 1979-05-17
+keywords.resource:41
+${sexo} = M
+keywords.resource:42
+${estado_civil} = Casado
+keywords.resource:43
+${naturalidade} = Tanguá
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Elias Nascimento', '1979-05-17', 'M', 'Casado', 'Tanguá', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Elias Nascimento', '1979-05-17', 'M', 'Casado', 'Tanguá', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
+keywords.resource:49
+${data} = ['Camila Alves', '1989-08-24', 'Feminino', 'Divorciado', 'Manaus', 'Brasileira']
+keywords.resource:38
+${nome} = Camila Alves
+keywords.resource:40
+${data_nascimento} = 1989-08-24
+keywords.resource:41
+${sexo} = Feminino
+keywords.resource:42
+${estado_civil} = Divorciado
+keywords.resource:43
+${naturalidade} = Manaus
+keywords.resource:44
+${nacionalidade} = Brasileira
+keywords.resource:45
+${sql} = INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Camila Alves', '1989-08-24', 'Feminino', 'Divorciado', 'Manaus', 'Brasileira')
+keywords.resource:47
+Executing sql:<br><code style="font-weight: bold;">INSERT INTO usuarios(nome, data_nascimento, sexo, estado_civil, naturalidade, nacionalidade) VALUES ('Camila Alves', '1989-08-24', 'Feminino', 'Divorciado', 'Manaus', 'Brasileira')</code>
+keywords.resource:49
+Commit the transaction
