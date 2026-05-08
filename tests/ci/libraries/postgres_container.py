@@ -1,3 +1,4 @@
+from testcontainers.postgres import PostgresContainer
 import psycopg2
 
 class PostgresContainerLibrary:
@@ -42,8 +43,9 @@ class PostgresContainerLibrary:
             self.conn.commit()
 
     def stop_postgres_container(self):
-        if self.conn:
-            self.conn.close()
-
         if self.postgres:
             self.postgres.stop()
+    
+    def close_connection(self):
+        if self.conn:
+            self.conn.close()

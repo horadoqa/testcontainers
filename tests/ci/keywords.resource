@@ -4,6 +4,9 @@ Library    String
 Library    Collections
 Library    ${CURDIR}/libraries/postgres_container.py
 
+Suite Setup       Inicializar Banco
+Suite Teardown    Finalizar Banco
+
 *** Variables ***
 ${CSV_FILE}     ${CURDIR}/usuarios.csv
 ${TABLE_NAME}   usuarios
@@ -20,7 +23,7 @@ Inicializar Banco
     Set Suite Variable    ${DB_PASSWORD}   ${db}[password]
 
 Criar Tabela
-    ${sql}=    Catenate    SEPARATOR=
+    ${sql}=    Catenate    SEPARATOR=  
     ...    CREATE TABLE IF NOT EXISTS ${TABLE_NAME}
     ...    (id SERIAL PRIMARY KEY,
     ...    nome VARCHAR(255),
@@ -60,5 +63,5 @@ Inserir Dados
     END
 
 Finalizar Banco
-    ${CONN}.close()
     Stop Postgres Container
+    Close Connection
