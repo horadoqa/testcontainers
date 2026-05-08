@@ -2,7 +2,7 @@
 Library    OperatingSystem
 Library    String
 Library    Collections
-Library    tests.ci.libraries.postgres_container.PostgresContainerLibrary    WITH NAME    DB
+Library    libraries.postgres_container.PostgresContainerLibrary    WITH NAME    DB
 
 *** Variables ***
 ${CSV_FILE}     ${CURDIR}/usuarios.csv
