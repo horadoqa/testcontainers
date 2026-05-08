@@ -49,3 +49,5 @@ class PostgresContainerLibrary:
     def close_connection(self):
         if self.conn:
             self.conn.close()
+
+print("POSTGRES LIBRARY LOADED")
