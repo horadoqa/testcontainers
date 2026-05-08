@@ -3,7 +3,7 @@ Library    DatabaseLibrary
 Library    OperatingSystem
 Library    String
 Library    Collections
-Library    ./libraries/postgres_container.py    WITH NAME    Postgres
+Library    ${CURDIR}/libraries/postgres_container.py    WITH NAME    Postgres
 
 *** Variables ***
 ${DB_NAME}      horadoqa-postgresql
