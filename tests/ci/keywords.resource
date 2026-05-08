@@ -2,7 +2,7 @@
 Library    OperatingSystem
 Library    String
 Library    Collections
-Library    ${CURDIR}/libraries/postgres_container.py
+Library    tests.ci.libraries.postgres_container.PostgresContainerLibrary    WITH NAME    DB
 
 *** Variables ***
 ${CSV_FILE}     ${CURDIR}/usuarios.csv
@@ -10,7 +10,7 @@ ${TABLE_NAME}   usuarios
 
 *** Keywords ***
 Inicializar Banco
-    ${db}=    Start Postgres Container
+    ${db}=    DB.Start Postgres Container    
 
     Set Suite Variable    ${CONN}          ${db}[conn]
     Set Suite Variable    ${DB_HOST}       ${db}[host]
@@ -44,13 +44,13 @@ Inserir Dados
     FOR    ${line}    IN    @{data_lines}
 
         ${line}=    Strip String    ${line}
-        IF    '${line}' == ''
+        IF    $line == ''
             CONTINUE
         END
 
         ${data}=    Split String    ${line}    ,
 
-        Insert User
+        DB.Insert User
         ...    ${data}[0]
         ...    ${data}[1]
         ...    ${data}[2]
@@ -60,5 +60,5 @@ Inserir Dados
     END
 
 Finalizar Banco
-    Stop Postgres Container
-    Close Connection
+    DB.Stop Postgres Container
+    DB.Close Connection
