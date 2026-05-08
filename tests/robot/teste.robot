@@ -1,6 +1,8 @@
 *** Settings ***
 Library    SeleniumLibrary
 
+
+
 *** Variables ***
 ${URL}    https://serverest.dev/usuarios
 ${BROWSER}    chrome

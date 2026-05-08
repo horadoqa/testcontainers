@@ -3,7 +3,7 @@ Library    DatabaseLibrary
 Library    OperatingSystem
 Library    String
 Library    Collections
-Library    ${CURDIR}/libraries/postgres_container.py    WITH NAME    Postgres
+Library    ../libraries/postgres_container.py    WITH NAME    Postgres
 
 *** Variables ***
 ${DB_NAME}      horadoqa-postgresql
@@ -50,4 +50,3 @@ Inserir Dados
     END
 
     Disconnect From Database
-
