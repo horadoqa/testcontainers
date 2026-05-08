@@ -170,10 +170,10 @@ Nesse caso:
 
 ---
 
-## Executando o teste:
+## Executando o teste localmente com WSL:
 
 ```bash
-robot insert.robot
+robot -d results ./tests/local/insert.robot
 ```
 
 ## Resultado

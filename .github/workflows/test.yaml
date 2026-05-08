@@ -27,14 +27,11 @@ jobs:
 
       - name: Executar testes Robot
         run: |
-          robot tests/
+          robot -d results tests/ci
 
       - name: Publicar resultados
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: robot-results
-          path: |
-            log.html
-            report.html
-            output.xml
+            name: robot-results
+            path: results/
