@@ -4,9 +4,6 @@ Library    String
 Library    Collections
 Library    ${CURDIR}/libraries/postgres_container.py
 
-Suite Setup       Inicializar Banco
-Suite Teardown    Finalizar Banco
-
 *** Variables ***
 ${CSV_FILE}     ${CURDIR}/usuarios.csv
 ${TABLE_NAME}   usuarios
